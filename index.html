@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube clone by kim baricog</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='gwapo1.css') }}">
+   <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <div class="card">
+<div class="menu-icon"  onclick="toggleMenu()">
+
+
+  &#9776; <!-- Unicode for hamburger icon -->
+</div>
+    <nav style="
+         position: absolute;
+         width: 600px;
+         height: 40;
+         justify-content: ;
+         font-size:
+         font-family: Arial, sans-serif;
+         top: 90px;
+         left: 140px;">
+
+    <a href="" style="font-family: verdana, sans-serif; color: black; margin-right: 30px;" class="btn" ><b>All</b></a>
+    <a href="https://www.youtube.com/gaming" style="font-family: verdana, sans-serif; color: black; margin-right: 30px;" class="btn"><b>Gaming</b></a>
+    <a href=" https://www.youtube.com/music" style="font-family: verdana, sans-serif; color: black; margin-right: 30px;" class="btn"><b>Music</b></a>
+
+    </nav>
+
+    <img src="static/youtube.png" style="position: absolute; top: 20px; width: 50px; height: 40px; left: 50px;">
+
+    <input type="text" id="search" placeholder="Search..."
+      onkeydown="checkEnter(event)"
+      style="position: absolute;
+             left: 300px;
+             top: 25px;
+             background-color: rgba(0, 0, 0, 0.1);
+             width: 600px;
+             height: 30px;">
+
+    <div class="mag">🔍</div>
+    <div class="youtube"><b>IkawTubo</b></div>
+  </div>
+
+  <div id="video-results" class="card1">
+    <!-- Mock videos will be shown here -->
+  </div>
+<div class="text"><b>Recommended</b></div>
+<a href="https://youtu.be/oAQCV4Z45wY?si=Db_Xgar7SHmSHi9J">
+<img src="static/2video.png" alt="button image" style="width: 440px; position: absolute; left: 180px; top: 170px; height: auto; cursor: pointer;"></a>
+
+<a href="https://www.youtube.com/@KristianPH">
+<img src="static/2video1.png" alt="button image" style="width: 35px;  position: absolute; left: 179px; top: 420px; height: auto; cursor: pointer;"></a>
+
+<img src="static/home.png">
+
+
+
+<!-- Sidebar Menu -->
+<div id="sidebar" class="sidebar">
+  <div id="menuIcon" onclick="toggleMenu()" class="exit"><i class="fas fa-menu"></i></div>
+  <a href="#"><i class="fas fa-home"></i> Home</a>
+  <a href=" https://www.youtube.com/hashtag/shorts"><i class="fas fa-bolt"></i> Shorts</a>
+  <a href="https://www.youtube.com/feed/subscriptions"> <i class="fas fa-folder"></i> subscription</a>
+  <a href="#">History</a>
+  <a href="#">Playlists</a>
+</div>
+
+</body>
+</html>
